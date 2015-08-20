@@ -62,11 +62,17 @@ We're going to start by setting up a very simple Angular app. Soon we'll learn a
 Questions:
 
 * Why learn Angular JS over other frameworks like Ember, Backbone, Knockout, etc?
+###It takes less lines of code, less lines, less characters, easier to read. Also from what I have read about angular versus other frameworks, angular doesnt user setters and getters for data binding. You can treat data almost like objects and object notation in angular.
 * People have some very strong opinions about Angular.  What are 3 common complaints people have about Angular?
+### angular server pages, performance problems, its use and employment blur the lines between front end and back end development
 * Is Angular an MVC framework?
+### MVC stands for 'model-view-controller' and describes the three parts of a framework, mostly used for interfaces
 * Why did I say jQuery is "sort of" a dependency of Angular? Does it depend on it or not?!
+### Apparently angular comes with/uses a mini version of jquery called jquerylite or something.
 * Read the docs for `ng-app`. What is it and what does it do?
+### it defines the root element to auto bootstrap onto application. It basically enablesyour page to run
 * What does `ng` stand for?
+### ng stands for angular, in html, angular uses angular brackets (curlies) and ng sounds like angular
 
 Resources:
 
