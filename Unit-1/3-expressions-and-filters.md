@@ -38,10 +38,13 @@ Notice that this filter does 2 things for us: it rounds the data to 2 decimal pl
 **EXERCISE**
 
 Change the above code so that our currency filter uses a Euro symbol instead of a Dollar sign. You'll need to do some research of your own.
+- {{ some num | currency:'&euro;'}}
 
 **EXERCISE**
 
 Add a text input to a page that displays user input in all caps and all lowercase. You will need to use 2 built-in filters that we haven't covered. Use the following gif as a reference**
+- {{name | lowercase}}
+- {{name | uppercase}}
 
 ![](http://zippy.gfycat.com/CookedWelcomeDesertpupfish.gif)
 
@@ -52,7 +55,7 @@ Let's try using another built-in filter to format our data.  Angular has a `numb
 {{3.14159265359 | number:6}}
 {{3.14159265359 | number:1}}
 ```
-
+//BREAK POINT**********************
 **EXERICSE**
 
 Create a drop down menu where the user can select how many digits to round pi to. BONUS: Find out how to pluralize "digit" correctly. Angular comes with a built-in way of pluralizing things!  It should work like the following gif.
