@@ -59,7 +59,12 @@ Let's try using another built-in filter to format our data.  Angular has a `numb
 **EXERICSE**
 
 Create a drop down menu where the user can select how many digits to round pi to. BONUS: Find out how to pluralize "digit" correctly. Angular comes with a built-in way of pluralizing things!  It should work like the following gif.
-
+- <select ng-model="digits">
+  <option value="1">1 decimal place</option>
+  <option value="2">2 decimal places</option>
+  <option value="3">3 decimal places</option>
+</select>
+<p>{{3.14159265 | number:digits}}</p>
 ![](http://zippy.gfycat.com/LegalThickIndochinesetiger.gif)
 
 **EXERCISE**

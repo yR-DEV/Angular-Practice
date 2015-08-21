@@ -5,8 +5,12 @@
     <title></title>
   </head>
   <body>
-    {{3.14159265359 | number:3}}
-    {{1 + 6}}
+    <select ng-model="digits">
+      <option value="1">1 decimal place</option>
+      <option value="2">2 decimal places</option>
+      <option value="3">3 decimal places</option>
+    </select>
+    <p>{{3.14159265 | number:digits}}</p>
     <input type="text" placeholder="What is your name?" ng-model="name" id="nameInput">
     <h1>My name is: {{name | lowercase}}</h1>
     <!-- <h2 id="jsName">My name is: <p id="pJsName"></p></h2> -->
