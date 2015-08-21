@@ -43,10 +43,15 @@ Use `ng-model` with a dropdown menu (select tag).  Give the user the following f
 ## Questions
 
 * What does ng-model do?
+- ng-model binds the input, textarea, whatever, to the angular model and binds it to a property on the scope, you can change css elements, calculate validations, etc
 * What is "dirty checking"?
+- Dirty checking is how the digestion cycle of the angular model and scope does more of a scan for changes, and the scan or loop stops when it finds something changed, changes it if need be, and continues where it left off. A non-dirty checking cycle woud finish the loop/scan then change dom/vars as needed.
 * Find a way to set the initial value of "name" as "BoJack" (without writing a controller).
+- you do it using ng-init="model-name-here='initial_value'"
 * What are those `{{ }}` expressions?  Are they Handlebars?
+- no they just indicate data-binding
 * Explain what 2-way data binding is.
+- The html template gets loaded and the the view gets loaded, 2 way data binding is where any changes in the model, update the view, and changes to the view, update the model. It's a synchronization of the model, and the view. 
 * BONUS: Research the `$digest` loop
 
 Resources:
