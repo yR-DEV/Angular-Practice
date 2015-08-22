@@ -5,15 +5,13 @@
     <title></title>
   </head>
   <body>
-    <select ng-model="digits">
-      <option value="1">1 decimal place</option>
-      <option value="2">2 decimal places</option>
-      <option value="3">3 decimal places</option>
+    <select ng-model="animals">
+      <option value="0.10">10%</option>
+      <option value="0.15">15%</option>
+      <option value="0.2">20%</option>
     </select>
-    <p>{{3.14159265 | number:digits}}</p>
-    <input type="text" placeholder="What is your name?" ng-model="name" id="nameInput">
-    <h1>My name is: {{name | lowercase}}</h1>
-    <!-- <h2 id="jsName">My name is: <p id="pJsName"></p></h2> -->
+
+    <h3>animal: {{animals}}</h3>
     <script src="2-vanillaJs.js", type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.3/angular.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>

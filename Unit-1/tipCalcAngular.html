@@ -1,20 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html ng-app>
   <head>
     <meta charset="utf-8">
-    <title>tip calc angular</title>
+    <title></title>
   </head>
   <body>
-    <p> Please Enter Bill:
-      <input ng-model="meal" type="text">
-    </p>
+    <input type="text" ng-model="bill" value="0">
+    <br>
+    <br>
     <select ng-model="percentage">
-      <option value=.10>10%</option>
-      <option value="15">15%</option>
-      <option value="20">20%</option>
+      <option value="">Select A percentage</option>
+      <option value="0.10">10%</option>
+      <option value="0.15">15%</option>
+      <option value="0.2">20%</option>
     </select>
-    <h2>Your Meal Total Is: </h2>
-    <h4>{{meal}}</h4>
+
+    <h3>Tip Amount: {{bill * percentage}}</h3>
+    <script src="2-vanillaJs.js", type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.3/angular.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   </body>

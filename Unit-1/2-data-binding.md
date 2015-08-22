@@ -1,4 +1,4 @@
-# 2 Way Data Binding
+  # 2 Way Data Binding
 
 Let's start by building something simple that showcases the power of Angular.
 
@@ -51,7 +51,7 @@ Use `ng-model` with a dropdown menu (select tag).  Give the user the following f
 * What are those `{{ }}` expressions?  Are they Handlebars?
 - no they just indicate data-binding
 * Explain what 2-way data binding is.
-- The html template gets loaded and the the view gets loaded, 2 way data binding is where any changes in the model, update the view, and changes to the view, update the model. It's a synchronization of the model, and the view. 
+- The html template gets loaded and the the view gets loaded, 2 way data binding is where any changes in the model, update the view, and changes to the view, update the model. It's a synchronization of the model, and the view.
 * BONUS: Research the `$digest` loop
 
 Resources:
