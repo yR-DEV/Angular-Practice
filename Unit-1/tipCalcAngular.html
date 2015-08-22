@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>tip calc angular</title>
+  </head>
+  <body>
+    <p> Please Enter Bill:
+      <input ng-model="meal" type="text">
+    </p>
+    <select ng-model="percentage">
+      <option value=.10>10%</option>
+      <option value="15">15%</option>
+      <option value="20">20%</option>
+    </select>
+    <h2>Your Meal Total Is: </h2>
+    <h4>{{meal}}</h4>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.3/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  </body>
+</html>
