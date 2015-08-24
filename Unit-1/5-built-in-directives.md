@@ -9,7 +9,7 @@ There are 4 ways of writing directives, but it's best practice to only write the
 Angular comes with a bunch of built-in directives, some of which we've already used.  We will focus on built-in directives for now, but soon we will write our own custom directives.
 
 **EXERCISE: Name at least 3 built-in directives that we have used so far.**
-
+- ng-controller, ng-app, ng-model
 Here's a complete-ish list of Angular's built-in directives in no particular order:
 
 * ng-repeat
@@ -72,7 +72,7 @@ Question: what would happen if you put the `ng-repeat` directive on the `ul` ele
   <li>{{name}}</li>
 </ul>
 ```
-
+- it doesnt work because I think it is trying to make a new list for each of the items in the array I put in the controller
 **EXERCISE**
 
 Add a property called `symbols` with the value `["&spades;", "&clubs;", "&hearts;", "&diams;"]`.  Use an `ng-repeat` to display each one in the template.  
@@ -88,6 +88,7 @@ Try using `ng-repeat` to iterate through an array with some duplicates, like `[1
 **EXERCISE**
 
 Use `ng-repeat` to iterate through the attributes (keys) of an object and list them on in the template
+- in order to tell angular to loop through an array with duplicates, use "track by $index"in the ng-repeat statement to track by the index of the array and not the actual value of the indexed item
 
 ### ng-show/hide
 
@@ -116,10 +117,12 @@ The element is hidden when the expression provided to `ng-show` attribute is fal
 **EXERCISE**
 
 Inspect an element that is hidden by ng-show/hide in the browser.  What does Angular do to hide an element?
+- it sets a class on the element called ng-hide
 
 **EXERCISE**
 
 Create a simple password validator like the one shown below.  If the password is less than 6 characters, hide the submit button and show the error message.  Otherwise, show the button and hide the error
+- done
 
 ![](http://zippy.gfycat.com/FelineEqualElectriceel.gif)
 
