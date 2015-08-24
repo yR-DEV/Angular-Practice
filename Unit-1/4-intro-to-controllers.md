@@ -83,8 +83,11 @@ Sunday, October 20, 2015
 ## Questions
 
 * What is `$scope`?
+- Scope is an object that refers to the documents model, it is the execution context for expressions, and represents the domin hiearchical order.
 * What are Angular modules?
+- modules are containers for controllers, services, filters and directives. Most programs have amain method in their file, but angular doesnt work this way, modulesspecify how an app should be bootstrapped.
 * Why do we pass in `$scope` as an argument to controller functions?
+- becuase it is an object of the fom elements. In order to set a, let's say variable, you have to set a key value pair using object notation
 * In Express, what are angular controllers most analogous to?
 
 ## Resources:
