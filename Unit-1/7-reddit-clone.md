@@ -5,6 +5,7 @@ It's time to put everything you've learned so far about Angular to use.  You're 
 
 [![](https://i.gyazo.com/f9d435b4e198cf5ea3c29607d40a8958.png)](https://vimeo.com/135778837)
 
+###I was just told to not use mongo!
 
 Requirements:
 
