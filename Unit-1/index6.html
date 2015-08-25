@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app="Part6">
+  <head>
+    <meta charset="utf-8">
+    <title>events</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.3/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="app6.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div ng-controller="EventsExercise">
+      <h3>The number is: {{number}}</h3>
+      <button ng-click="pickRandomNumber()">Pick Random Number</button>
+      <input type="text" ng-model="revStr" />
+      <h3>{{revStr}}</h3>
+      <!-- <h3 </h3> -->
+      <button ng-click="reverseStr()">Toggle Reverse</button>
+    </div>
+  </body>
+</html>
