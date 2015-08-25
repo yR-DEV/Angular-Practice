@@ -18,3 +18,23 @@
   height: auto;
   width: 75px;
 }
+
+.p1 {
+  width: 48%;
+  float: left;
+  height: 300px;
+  background-color: blue;
+  text-align: center;
+}
+
+.p2 {
+  width: 48%;
+  float: right;
+  height: 300px;
+  background-color: blue;
+  text-align: center;
+}
+
+.resetBtn {
+  /*margin-top: 300px;*/
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="pingPong">
+  <head>
+    <meta charset="utf-8">
+    <title>pp</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.3/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="pingpong.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div ng-controller="Pong">
+      <div ng-click="p1Point()">
+        <p class="p1" ng-model="p1Score">Player 1 - Score: {{p1Score}}</p>
+      </div>
+      <div ng-click="p2Point()">
+      <p class="p2" ng-model="p2Score">Player 2 - Score: {{p2Score}}</p>
+      </div>
+      <br>
+      <br>
+      <br>
+      <button class="resetBtn" ng-click="reset()" value="RESET">RESET</button>
+    </div>
+  </body>
+</html>
