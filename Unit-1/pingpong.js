@@ -6,6 +6,7 @@ app.controller("Pong", function($scope) {
 
   $scope.p1Point = function() {
     if($scope.p1Score === 11) {
+      $scope.p1Bool = true;
       $scope.p1Score = "Player 1 wins";
     }
     $scope.p1Score += 1;
@@ -13,6 +14,7 @@ app.controller("Pong", function($scope) {
 
   $scope.p2Point = function() {
     if($scope.p2Score === 11) {
+      $scope.p2Bool = true;
       $scope.p2Score = "Player 2 wins";
     }
     $scope.p2Score += 1;
@@ -21,5 +23,7 @@ app.controller("Pong", function($scope) {
   $scope.reset = function() {
     $scope.p1Score = 0;
     $scope.p2Score = 0;
+    $scope.p1Bool = false;
+    $scope.p2Bool = false;
   };
 });
